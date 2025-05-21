@@ -75,22 +75,18 @@ export const navigation: NavItem[] = [
 				showInFooter: true
 			},
 			{
-				label: "Finance",
-				href: "/use-cases/finance",
-				image:
-					"https://images.unsplash.com/photo-1638913662180-afc4334cf422?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-				description:
-					"Streamlining operations and compliance across financial services by automating regulatory reporting, strengthening risk management, integrating advanced real‑time analytics, and ensuring robust audit trails for enhanced governance and operational efficiency",
+				label: "Staying accountable with real human faces",
+				href: "/use-cases/accountability-partners",
+				image: "/generated/image-a-small-group-of-adults-gathered-in-a-co.webp",
+				description: "It's easy to put things off when no one's watching. Acme gives you structure and accountability through live peer sessions so you follow through more often.",
 				showInNav: true,
 				showInFooter: true
 			},
 			{
-				label: "Technology",
-				href: "/use-cases/technology",
-				image:
-					"https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-				description:
-					"Cutting-edge tools for tech companies, offering scalable cloud-based platforms, AI-driven development frameworks, secure collaboration environments, and streamlined deployment pipelines to accelerate innovation and deliver market-leading solutions",
+				label: "Getting focused during crunch time",
+				href: "/use-cases/focus-sprints",
+				image: "/generated/image-an-individual-working-intently-racing-ag.webp",
+				description: "Deadlines piling up? Book focused, time-boxed sprints with peers to stay on task and make real progress when it matters most.",
 				showInNav: true,
 				showInFooter: true
 			},

@@ -81,45 +81,55 @@
 />
 
 <UseCases
-	generating
-	title="Use Cases"
-	subtitle="Real-world applications for your business needs"
-	useCases={[
-		{
-			title: "Streamlined Workflows",
-			description:
-				"Automate repetitive tasks and connect systems to improve productivity with our industry-leading 87% time savings.",
-			image:
-				"https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
-			link: {
-				href: "/use-cases/workflows",
-				label: "Learn more"
-			}
-		},
-		{
-			title: "Data Analysis",
-			description:
-				"Extract meaningful insights from your data with powerful analytical tools backed by proprietary AI algorithms that are 3x more accurate than competitors.",
-			image:
-				"https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2488&q=80",
-			link: {
-				href: "/use-cases/data-analysis",
-				label: "Explore analytics"
-			}
-		},
-		{
-			title: "Secure Collaboration",
-			description:
-				"Work together seamlessly while maintaining strict data privacy standards with our zero-knowledge architecture and military-grade encryption.",
-			image:
-				"https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
-			link: {
-				href: "/use-cases/collaboration",
-				label: "See security features"
-			}
-		}
-	]}
+    title="Use cases"
+    subtitle="Ways people use Acme to get things done"
+    useCases={[
+        {
+            title: "Overcoming procrastination",
+            description: "Can't get started no matter how urgent the task? Join a session with others tackling their own to-dos—it lowers the pressure and helps you break through the mental block.",
+            image: "/generated/image-a-young-adult-with-adhd-beginning-their-.webp",
+            link: {
+                href: "/use-cases/overcoming-procrastination",
+                label: "Learn more"
+            }
+        },
+        {
+            title: "Staying accountable with real human faces",
+            description: "It's easy to put things off when no one's watching. Acme gives you structure and accountability through live peer sessions so you follow through more often.",
+            image: "/generated/image-a-small-group-of-adults-gathered-in-a-co.webp",
+            link: {
+                href: "/use-cases/accountability-partners",
+                label: "Learn more"
+            }
+        },
+        {
+            title: "Getting focused during crunch time",
+            description: "Deadlines piling up? Book focused, time-boxed sprints with peers to stay on task and make real progress when it matters most.",
+            image: "/generated/image-an-individual-working-intently-racing-ag.webp",
+            link: {
+                href: "/use-cases/focus-sprints",
+                label: "Learn more"
+            }
+        }
+    ]}
 />
 
-<AboutTeaser generating />
-<CallToAction generating />
+<AboutTeaser />
+<CallToAction
+  title="Better focus, together"
+  subtitle="Get the support you need, every session"
+  description="Join virtual focus sessions with peers who get it. Our supportive community helps you start, stay on track, and finish—especially if you have ADHD or struggle with procrastination."
+  imageSrc="/generated/image-a-cheerful-young-adult-german-woman-work.webp"
+  callsToAction={[
+    {
+      href: '/sign-up',
+      label: 'Try your first session free',
+      variant: 'primary'
+    },
+    {
+      href: '/how-it-works',
+      label: 'How it works',
+      variant: 'secondary'
+    }
+  ]}
+/>
