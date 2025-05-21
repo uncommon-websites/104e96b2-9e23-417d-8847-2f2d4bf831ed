@@ -35,139 +35,148 @@ Please update features according to the company's product offering. Do not remov
 
 	// Props
 	const {
-		title = "Simple, transparent pricing",
-		subtitle = "Choose the plan that works best for your needs",
-		tierNames = ["Starter", "Pro", "Enterprise"],
+		title = "Simple, outcome-focused pricing",
+		subtitle = "Choose the focus support that matches your needs",
+		tierNames = ["Free", "Plus", "Pro"],
 		features = [
-			{
-				name: "Projects",
-				tiers: {
-					Starter: "5",
-					Pro: "Unlimited",
-					Enterprise: "Unlimited"
-				}
-			},
-			{
-				name: "Team members",
-				tiers: {
-					Starter: "1",
-					Pro: "10",
-					Enterprise: "Unlimited"
-				}
-			},
-			{
-				name: "Storage",
-				tiers: {
-					Starter: "1GB",
-					Pro: "10GB",
-					Enterprise: "Unlimited"
-				}
-			},
-			{
-				name: "API access",
-				tiers: {
-					Starter: false,
-					Pro: true,
-					Enterprise: true
-				}
-			},
-			{
-				name: "Custom domains",
-				tiers: {
-					Starter: false,
-					Pro: true,
-					Enterprise: true
-				}
-			},
-			{
-				name: "Analytics",
-				tiers: {
-					Starter: "Basic",
-					Pro: "Advanced",
-					Enterprise: "Advanced"
-				}
-			},
-			{
-				name: "Support response time",
-				tiers: {
-					Starter: "24 hours",
-					Pro: "4 hours",
-					Enterprise: "1 hour"
-				}
-			},
-			{
-				name: "Dedicated account manager",
-				tiers: {
-					Starter: false,
-					Pro: false,
-					Enterprise: true
-				}
-			},
-			{
-				name: "SLA",
-				tiers: {
-					Starter: false,
-					Pro: false,
-					Enterprise: "99.9%"
-				}
-			}
-		],
+	{
+		name: "Number of sessions/month",
+		tiers: {
+			Free: "2",
+			Plus: "Unlimited",
+			Pro: "Unlimited"
+		}
+	},
+	{
+		name: "Session duration",
+		tiers: {
+			Free: "45 min",
+			Plus: "45 or 60 min",
+			Pro: "45 or 60 min"
+		}
+	},
+	{
+		name: "Host sessions",
+		tiers: {
+			Free: false,
+			Plus: true,
+			Pro: "Individual & team hosting"
+		}
+	},
+	{
+		name: "Join prime-time sessions",
+		tiers: {
+			Free: false,
+			Plus: true,
+			Pro: true
+		}
+	},
+	{
+		name: "Session statistics/history",
+		tiers: {
+			Free: false,
+			Plus: true,
+			Pro: true
+		}
+	},
+	{
+		name: "Booking priority",
+		tiers: {
+			Free: false,
+			Plus: true,
+			Pro: true
+		}
+	},
+	{
+		name: "Group/team management",
+		tiers: {
+			Free: false,
+			Plus: false,
+			Pro: true
+		}
+	},
+	{
+		name: "Premium support",
+		tiers: {
+			Free: false,
+			Plus: false,
+			Pro: true
+		}
+	},
+	{
+		name: "Live workshops",
+		tiers: {
+			Free: false,
+			Plus: false,
+			Pro: true
+		}
+	},
+	{
+		name: "Early AI-matching access",
+		tiers: {
+			Free: false,
+			Plus: true,
+			Pro: true
+		}
+	}
+	],
 		tiers = [
-			{
-				name: "Starter",
-				monthlyPrice: 9.99,
-				yearlyPrice: 7.99, // 20% savings
-				description: "Perfect for individuals and small projects",
-				features: [
-					"Up to 5 projects",
-					"Basic analytics",
-					"24-hour support response time",
-					"1GB storage"
-				],
-				cta: {
-					label: "Get started",
-					href: "/signup?plan=starter"
-				}
-			},
-			{
-				name: "Pro",
-				monthlyPrice: 29.99,
-				yearlyPrice: 23.99, // 20% savings
-				description: "For growing teams and businesses",
-				features: [
-					"Unlimited projects",
-					"Advanced analytics",
-					"4-hour support response time",
-					"10GB storage",
-					"Custom domains",
-					"Team collaboration tools"
-				],
-				cta: {
-					label: "Get started",
-					href: "/signup?plan=pro"
-				},
-				highlight: true
-			},
-			{
-				name: "Enterprise",
-				monthlyPrice: null,
-				yearlyPrice: null,
-				description: "For large organizations with specific needs",
-				features: [
-					"Everything in Pro",
-					"Dedicated account manager",
-					"1-hour support response time",
-					"Unlimited storage",
-					"Advanced security features",
-					"Custom integrations",
-					"99.9% uptime SLA"
-				],
-				cta: {
-					label: "Contact sales",
-					href: "/contact"
-				}
-			}
-		]
+	{
+		name: "Free",
+		monthlyPrice: 0,
+		yearlyPrice: 0,
+		description: "Try focus sessions with no commitment. New here? Start here.",
+		features: [
+			"2 sessions/month",
+			"45-minute sessions",
+			"Standard pod matching",
+			"Limited session times",
+			"No ability to host sessions"
+		],
+		cta: {
+			label: "Join free",
+			href: "/signup?plan=free"
+		}
+	},
+	{
+		name: "Plus",
+		monthlyPrice: 14.99,
+		yearlyPrice: 11.99, // 20% savings
+		description: "Build consistency and own your focus routine with added flexibility and data.",
+		features: [
+			"Unlimited sessions",
+			"45- or 60-minute sessions",
+			"Host your own focus sessions",
+			"Join prime-time sessions",
+			"Session statistics and history",
+			"Priority booking during busy hours",
+			"Early access to new features"
+		],
+		cta: {
+			label: "Start Plus",
+			href: "/signup?plan=plus"
+		},
+		highlight: true
+	},
+	{
+		name: "Pro",
+		monthlyPrice: 19.99,
+		yearlyPrice: 15.99, // 20% savings
+		description: "Advanced structure and support for deep focus and team collaboration.",
+		features: [
+			"Everything in Plus",
+			"Host sessions for groups or teams",
+			"Manage private groups",
+			"Team-level analytics",
+			"Access to live video workshops",
+			"Priority customer support"
+		],
+		cta: {
+			label: "Start Pro",
+			href: "/signup?plan=pro"
+		}
+	}
+	]
 	}: {
 		title?: string;
 		subtitle?: string;

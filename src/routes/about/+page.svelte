@@ -10,34 +10,41 @@
 
 	// Constants
 	const values = [
-		{
-			title: "Innovation",
-			description: "Constantly challenging the status quo to create better solutions."
-		},
-		{
-			title: "Integrity",
-			description: "Building trust through transparent actions and honest communication."
-		},
-		{
-			title: "Impact",
-			description: "Measuring our success by the positive change we create for our clients."
-		}
-	];
+  {
+    title: "Support, not perfection",
+    description: "We celebrate real progress—messy, imperfect, and human. Everyone who joins Acme belongs here."
+  },
+  {
+    title: "Mission-driven work",
+    description: "We’re here to help people do their best work. Everything we do makes focus and well-being more accessible."
+  },
+  {
+    title: "Empathy at the core",
+    description: "No judgment, just understanding. We value each person’s unique brain and way of working."
+  },
+  {
+    title: "Collaboration over competition",
+    description: "We show up for each other. When one succeeds, we all do."
+  },
+  {
+    title: "Keep it simple",
+    description: "We remove friction and overcomplication. Focus thrives in clear, supportive spaces."
+  }
+];
 </script>
 
 <SecondaryHero
-	title="Solving world hunger"
-	subtitle="one step at a time"
-	imageSrc="https://source.unsplash.com/random/?people"
+	title="Focus better, together"
+	subtitle="Virtual co-working sessions that help you stay on task and feel supported"
+	imageSrc="/mockups/airport-screen-1747842133225.png"
 />
 
 <!-- Story Section -->
 <Story
 	paragraphs={[
-		"We started in 2018 with a simple goal: make helpful tech that people actually need. While many chase profits, we chose to do things differently.",
-		"Beyond making good products, we care about doing the right thing, being kind to our planet, and making sure everyone can use what we build. That's our compass.",
-		"From day one, we've asked ourselves: 'Does this actually help people?' This question gets us through tough calls and shapes who we are. We're playing the long game here.",
-		"We think about how our work affects real people's lives. We build tech that brings people together, keeps your information safe, and treats everyone fairly. When we stick to these basics, good things happen."
+		"It started with distraction. Jane, a psychologist and life coach, struggled to find tools that truly helped her ADHD clients—and herself—stay focused. Thomas and Lucy faced the same challenges in their high-pressure jobs. Tired of unreliable hacks and quick fixes, the three friends decided to create a solution that actually worked. One rooted in structure, empathy, and community. So they built Acme.",
+		"Acme is a virtual space where people struggling with focus can finally get things done—together. In real-time focus sessions, users work alongside others with similar challenges. No pressure, just quiet accountability. Whether you have ADHD, procrastinate often, or simply feel overwhelmed, it’s a calm, supportive environment to stay on track.",
+		"We believe focus shouldn't depend on willpower alone. Everyone hits mental walls. Acme is here to make getting past them a little easier. We're starting in Germany but building for a global community—because no one should have to battle focus problems alone."
 	]}
 />
 
@@ -46,53 +53,32 @@
 
 <!-- StakeholderGrid Section -->
 <StakeholderGrid
-	stakeholderType="team"
-	title="Our team."
-	subtitle="Your partners in innovation."
-	stakeholders={[
-		{
-			name: "Alex Morgan",
-			position: "Founder & CEO",
-			bio: "Started the company with a vision to transform the industry through innovative solutions.",
-			image:
-				"https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
-		},
-		{
-			name: "Jamie Chen",
-			position: "Chief Design Officer",
-			bio: "Award-winning designer with a passion for creating intuitive and beautiful experiences.",
-			image:
-				"https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=776&q=80"
-		},
-		{
-			name: "Taylor Wright",
-			position: "Head of Engineering",
-			bio: "Technology enthusiast focused on building scalable systems that make a difference.",
-			image:
-				"https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
-		}
-	]}
+  stakeholderType="team"
+  title="Our founders"
+  subtitle="Meet the people behind Acme Inc"
+  stakeholders={[
+    {
+      name: "Jane Doe",
+      position: "CEO, Psychologist & Life Coach",
+      bio: "Jane leads Acme with deep empathy for the daily realities of ADHD and focus struggles. She ensures everything we build is grounded in science and kindness.",
+      image: "/generated/image-a-headshot-of-a-female-psychologist-and-.webp"
+    },
+    {
+      name: "Thomas Müller",
+      position: "CSO, Ex-McKinsey",
+      bio: "Thomas brings rigorous strategy and a drive to solve complex problems, helping Acme grow thoughtfully and with purpose.",
+      image: "/generated/image-a-headshot-of-a-german-male-business-exe.webp"
+    },
+    {
+      name: "Lucy Rocks",
+      position: "CTO, Fullstack Developer",
+      bio: "Lucy makes sure every session runs seamlessly so users can focus, not fight with tech. She’s obsessed with building tools that truly help."
+      ,image: "/generated/image-a-headshot-of-a-woman-software-engineer-.webp"
+    }
+  ]}
 />
 
-<StakeholderGrid
-	stakeholderType="investor"
-	title="Backed by the best."
-	subtitle="Point Nine, TSIC and others"
-	stakeholders={[
-		{
-			name: "Point Nine Capital",
-			image: "https://cdn.brandfetch.io/pointnine.com/w/400/h/400/logo?c=1id_elLz2Bd5Ej-dWo7"
-		},
-		{
-			name: "TSIC Ventures",
-			image: "https://cdn.brandfetch.io/tiny.vc/w/400/h/400/logo?c=1a2b3c4d5e"
-		},
-		{
-			name: "Sequoia Capital",
-			image: "https://cdn.brandfetch.io/sequoiacap.com/w/400/h/400/logo"
-		}
-	]}
-/>
+<!-- No investors to display -->
 
 <!-- CTA Section -->
 <CallToAction

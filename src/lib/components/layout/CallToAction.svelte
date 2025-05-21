@@ -50,11 +50,22 @@
 
 	// Props
 	const {
-		title = "Get started today",
-		subtitle = "Join now",
-		description = "Ready to experience the difference? Join our community of satisfied customers and see how our solution can transform your workflow. ",
-		imageSrc = "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80",
-		callsToAction = [cta],
+		title = "Ready to help millions focus?",
+		subtitle = "Make your impact at Acme",
+		description = "If you’re passionate about making focus accessible, come build with us. Whether you join our team, support our mission, or want to collaborate—your efforts change lives for the better.",
+		imageSrc = "/generated/image-a-friendly-and-diverse-team-collaboratin.webp",
+		callsToAction = [
+      {
+        href: "/careers",
+        label: "View open roles",
+        variant: "primary"
+      },
+      {
+        href: "/invest",
+        label: "Invest or partner",
+        variant: "secondary"
+      }
+    ],
 		...rest
 	}: {
 		title?: string;
