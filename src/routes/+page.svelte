@@ -7,16 +7,50 @@
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
-	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+	import CustomerCardHero from "$lib/components/layout/hero-sections/CustomerCardHero.svelte";
 </script>
 
-<Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="/sample.png"
-	generating
+<CustomerCardHero
+  centered={false}
+  title="Find your flow in virtual focus sessions"
+  subtitle="Join peers to achieve deep focus and stay on track."
+  customers={[
+    {
+      name: "Anna",
+      position: "Focused master's student",
+      imageSrc: "/generated/image-a-german-woman-in-her-mid-20s-sits-in-a-.webp"
+    },
+    {
+      name: "Jonas",
+      position: "Focused working parent",
+      imageSrc: "/generated/image-a-german-man-in-his-late-30s-is-in-a-hom.webp"
+    },
+    {
+      name: "Fatma",
+      position: "Motivated founder",
+      imageSrc: "/generated/image-a-turkish-german-woman-in-her-early-30s-.webp"
+    },
+    {
+      name: "Lukas",
+      position: "Productive project manager",
+      imageSrc: "/generated/image-a-german-man-in-his-late-20s-is-in-an-of.webp"
+    },
+    {
+      name: "Sofia",
+      position: "Focused creative",
+      imageSrc: "/generated/image-a-young-woman-in-a-berlin-loft-surrounde.webp"
+    }
+  ]}
 />
-<LogoScroller label="" generating />
+<LogoScroller
+	label="Trusted by industry leaders"
+	logoUrls={[
+		'https://logo.clearbit.com/sap.com',
+		'https://logo.clearbit.com/airbus.com',
+		'https://logo.clearbit.com/munichre.com',
+		'https://logo.clearbit.com/bosch.com'
+	]}
+/>
 
 <Summary
 	generating
